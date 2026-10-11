@@ -1,0 +1,12 @@
+[package]
+name = "keyboard"
+version = "0.1.0"
+edition = "2024"
+description = "A small, well-documented library for reading keyboard input on Windows."
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["keyboard", "input", "key", "windows", "gameloop"]
+categories = ["hardware-support"]
+
+[dependencies]
+windows = { version = "0.62.2", features = [ "Win32_UI_Input_KeyboardAndMouse" ] }
